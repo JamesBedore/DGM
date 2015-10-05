@@ -1,0 +1,24 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class IfStatements : MonoBehaviour
+{
+    int coins = 13;
+
+    void Start()
+    {
+        if (coins > 0 && coins < 5)
+        {
+            Debug.Log("You bought something cheap.");
+        }
+        else if (coins > 5 && coins < 10)
+        {
+            Debug.Log("You bought something not cheap.");
+        }
+
+        else
+        {
+            Debug.Log("Sold Out.");
+        }
+    }
+}
